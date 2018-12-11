@@ -1,0 +1,135 @@
+.header {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: rem(20) 0 rem(30) 0;
+  &__title {
+    @include font(80);
+    @include DancingScriptBold;
+    line-height: 1.3;
+    @media (max-width: $bigPhone) {
+     @include font(60)
+    }
+  }
+  &__text {
+    letter-spacing: 1px;
+  }
+}
+.header-nav {
+  position: relative;
+  width: 100%;
+  background-color: #161616;
+  @include CabinBold;
+  line-height: 1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  &__title {
+    display: flex;
+    justify-content: center;
+    color: #ddd;
+    padding: rem(15) rem(20);
+    &:after {
+      content: '';
+      position: absolute;
+      top: 12px;
+      margin-left: 50px;
+      display: block;
+      @include standart-bg;
+      width: rem(25);
+      height: rem(18);
+      background-image: svg-load('../svg/any-action-white-right.svg');
+      animation: 1s linear 0s alternate none infinite rot;
+      @keyframes rot {
+        0% {
+          transform: translateX(15px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+}
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  &.open {
+    opacity: 1;
+    z-index: 2;
+  }
+  @media (max-width: $smallTablet) {
+    position: absolute;
+    top: rem(45);
+    width: 100%;
+    opacity: 0;
+    flex-direction: column;
+    background-color: #161616;
+    transition: opacity 0.5s ease;
+  }
+  li {
+    position: relative;
+    margin: 0 rem(10);
+    z-index: 1;
+    cursor: pointer;
+    a {
+      display: block;
+      padding: rem(15) rem(20);
+      color: #ddd;
+      transition: 0.2s ease;
+      z-index: 2;
+    }
+    &:hover > a {
+      color: $black;
+      @media (max-width: $smallTablet) {
+        color: #ddd;
+        opacity: 0.6;
+      }
+    }
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 0;
+      top: 0;
+      z-index: -1;
+      background: #ffffff;
+      transition: height 0.3s;
+    }
+    &:hover:after {
+      height: 100%;
+      @media (max-width: $smallTablet) {
+        height: 0;
+      }
+    }
+  }
+}
+.icon {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  &--close-menu {
+    display: block;
+    cursor: pointer;
+    @include standart-bg;
+    width: rem(25);
+    height: rem(20);
+    background-image: svg-load('../svg/close-icon-white.svg');
+  }
+  &--menu {
+    display: block;
+    cursor: pointer;
+    @include standart-bg;
+    width: rem(25);
+    height: rem(18);
+    background-image: svg-load('../svg/menu-icon-white.svg');
+  }
+}
+
+

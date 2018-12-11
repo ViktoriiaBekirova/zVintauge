@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Crimson+Text|Dancing+Script');
+
+@mixin DancingScriptReg {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 400;
+}
+@mixin DancingScriptMedium {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 500;
+}
+@mixin DancingScriptBold {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 900;
+}
+
+@mixin CrimsonTextReg {
+  font-family: 'Crimson Text', serif;
+  font-weight: 400;
+}
+@mixin CrimsonTextMedium {
+  font-family: 'Crimson Text', serif;
+  font-weight: 500;
+}
+@mixin CrimsonTextBold {
+  font-family: 'Crimson Text', serif;
+  font-weight: 900;
+}
+
+@mixin CabinReg {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+}
+@mixin CabinMedium {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 500;
+}
+@mixin CabinBold {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 900;
+}

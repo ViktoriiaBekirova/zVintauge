@@ -1,0 +1,32 @@
+html {
+  height: 100%;
+  font-size: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: $font-family;
+  @include font(16);
+  line-height: 1;
+  color: $font-base-color;
+  background-color: $white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+p {
+  @include font(16);
+  @include CrimsonTextReg;
+  line-height: 1.5;
+  &.subtitle {
+    @include CrimsonTextBold;
+  }
+  @media (max-width: $bigPhone) {
+    @include font(14);
+  }
+}
