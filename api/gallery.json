@@ -1,0 +1,62 @@
+[
+  {
+    "header": "Lovely Smiles",
+    "tag1": "Design",
+    "tag2": "Illustrations",
+    "link": "/",
+    "img": {
+      "src": "/img/11.jpg",
+      "alt": "gallery"
+    }
+  },
+  {
+    "header": "Lovely Smiles",
+    "tag1": "Design",
+    "tag2": "Illustrations",
+    "link": "/",
+    "img": {
+      "src": "/img/6.jpg",
+      "alt": "gallery"
+    }
+  },
+  {
+    "header": "Lovely Smiles",
+    "tag1": "Design",
+    "tag2": "Illustrations",
+    "link": "/",
+    "img": {
+      "src": "/img/14.jpg",
+      "alt": "gallery"
+    }
+  },
+  {
+    "header": "Lovely Smiles",
+    "tag1": "Design",
+    "tag2": "Illustrations",
+    "link": "/",
+    "img": {
+      "src": "/img/5.jpg",
+      "alt": "gallery"
+    }
+  },
+  {
+    "header": "Lovely Smiles",
+    "tag1": "Design",
+    "tag2": "Illustrations",
+    "link": "/",
+    "img": {
+      "src": "/img/2.jpg",
+      "alt": "gallery"
+    }
+  },
+  {
+    "header": "Lovely Smiles",
+    "tag1": "Design",
+    "tag2": "Illustrations",
+    "link": "/",
+    "img": {
+      "src": "/img/9.jpg",
+      "alt": "gallery"
+    }
+  }
+]

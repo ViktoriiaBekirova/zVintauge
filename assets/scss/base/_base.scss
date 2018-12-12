@@ -30,3 +30,38 @@ p {
     @include font(14);
   }
 }
+span {
+  @include font(12);
+  @include CrimsonTextReg;
+  letter-spacing: 0.9px;
+}
+h2 {
+  @include font(22);
+  @include MontserratMedium;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+h3 {
+  @include font(20);
+  @include MontserratMedium;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+.wrapper {
+  position: relative;
+  max-width: rem(1040);
+  width: 100%;
+  margin: 0 auto;
+
+  @media (max-width: $bigTablet) {
+    padding: 0 rem(40);
+  }
+
+  @media (max-width: $smallTablet) {
+    padding: 0 rem(30);
+  }
+
+  @media (max-width: $bigPhone) {
+    padding: 0 rem(20);
+  }
+}
