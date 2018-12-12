@@ -15,7 +15,7 @@
       <div class="gallery">
         <div class="wrapper">
           <div class="gallery-container">
-            <div class="gallery-container__block" v-for="(item, index) in gallery" :key="index">
+            <div class="gallery-container__block" v-for="(item, index) in gallery" :key="`item_${index}`">
               <nuxt-link :to="item.link">
                 <div class="gallery-container__block_img">
                   <img :src="item.img.src" :alt="item.img.alt">
@@ -51,9 +51,9 @@ export default {
         mobileSlider
     },
     mounted () {
-        axios.get('https://api.myjson.com/bins/6qo5g')
+        axios.get('https://api.myjson.com/bins/dw34k')
             .then(response => {
-                this.gallery = response.data
+                this.gallery = response.data.slice(0,6)
                 // console.log(this.gallery)
             })
             .catch(e => {

@@ -1,6 +1,6 @@
 [
   {
-    "header": "Lovely Smiles",
+    "header": "Lovely Smiles1",
     "tag1": "Design",
     "tag2": "Illustrations",
     "link": "/",
@@ -10,7 +10,7 @@
     }
   },
   {
-    "header": "Lovely Smiles",
+    "header": "Lovely Smiles2",
     "tag1": "Design",
     "tag2": "Illustrations",
     "link": "/",
@@ -20,7 +20,7 @@
     }
   },
   {
-    "header": "Lovely Smiles",
+    "header": "Lovely Smiles3",
     "tag1": "Design",
     "tag2": "Illustrations",
     "link": "/",
@@ -30,7 +30,7 @@
     }
   },
   {
-    "header": "Lovely Smiles",
+    "header": "Lovely Smiles4",
     "tag1": "Design",
     "tag2": "Illustrations",
     "link": "/",
@@ -40,7 +40,7 @@
     }
   },
   {
-    "header": "Lovely Smiles",
+    "header": "Lovely Smiles5",
     "tag1": "Design",
     "tag2": "Illustrations",
     "link": "/",
@@ -50,12 +50,42 @@
     }
   },
   {
-    "header": "Lovely Smiles",
+    "header": "Lovely Smiles6",
     "tag1": "Design",
     "tag2": "Illustrations",
     "link": "/",
     "img": {
       "src": "/img/9.jpg",
+      "alt": "gallery"
+    }
+  },
+  {
+    "header": "Lovely Smiles7",
+    "tag1": "Design",
+    "tag2": "Illustrations",
+    "link": "/",
+    "img": {
+      "src": "/img/13.jpg",
+      "alt": "gallery"
+    }
+  },
+  {
+    "header": "Lovely Smiles8",
+    "tag1": "Design",
+    "tag2": "Illustrations",
+    "link": "/",
+    "img": {
+      "src": "/img/3.jpg",
+      "alt": "gallery"
+    }
+  },
+  {
+    "header": "Lovely Smiles9",
+    "tag1": "Design",
+    "tag2": "Illustrations",
+    "link": "/",
+    "img": {
+      "src": "/img/7.jpg",
       "alt": "gallery"
     }
   }
