@@ -59,7 +59,18 @@
       </div>
     </section>
     <section class="blog-section">
-
+      <div class="blog" v-for="(item, i) in blog" :key="`item_${i}`">
+        <div class="blog-content">
+          <div class="blog-content__img">
+            <img :src="item.img.src" :alt="item.img.alt">
+          </div>
+          <div class="blog-content__text">
+            <h3>{{item.header}}</h3>
+            <p>{{item.text}}</p>
+            <v-button class="blog-content__text_button" text="read more" link="/"></v-button>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 </template>
@@ -72,7 +83,8 @@ import mobileSlider from '~/components/ui/MobileSlider.vue'
 export default {
     data () {
         return {
-            gallery: null
+            gallery: null,
+            blog: null
         }
     },
     components: {
@@ -83,6 +95,10 @@ export default {
             .then(response => {
                 this.gallery = response.data.slice(0,6)
                 // console.log(this.gallery)
+            })
+        axios.get('https://api.myjson.com/bins/17xmb8')
+            .then(response => {
+                this.blog = response.data.slice(0,3)
             })
             .catch(e => {
                 console.log(e)
