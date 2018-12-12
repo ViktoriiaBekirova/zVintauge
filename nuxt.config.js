@@ -15,6 +15,7 @@ module.exports = {
   },
   css: [
       {src: '~assets/scss/app.scss', lang: 'scss'},
+      'swiper/dist/css/swiper.css'
   ],
   /*
   ** Customize the progress bar color
@@ -49,7 +50,8 @@ module.exports = {
   },
   vendor: ['components'],
   plugins: [
-  '~plugins/components.js'
+    '~plugins/components.js',
+    {src: '~plugins/swiper', ssr: false}
   ],
    modules: [
         [

@@ -1,9 +1,9 @@
 import Vue from 'vue'
 
 // UI elements
-// import Icon from '~/components/ui/Icon.vue'
-//
-// Vue.component('icon', Icon)
+import MobileSlider from '~/components/ui/MobileSlider.vue'
+
+Vue.component('mobile-slider', MobileSlider)
 
 
 
