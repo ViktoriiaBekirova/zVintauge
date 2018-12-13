@@ -7,16 +7,16 @@
 						<nuxt-link to="/">Home</nuxt-link>
 					</li>
 					<li>
-						<nuxt-link to="/">Gallery</nuxt-link>
+						<nuxt-link to="/gallery">Gallery</nuxt-link>
 					</li>
 					<li>
-						<nuxt-link to="/">Blog</nuxt-link>
+						<nuxt-link to="/blog">Blog</nuxt-link>
 					</li>
 					<li>
-						<nuxt-link to="/">About</nuxt-link>
+						<nuxt-link to="/about">About</nuxt-link>
 					</li>
 					<li>
-						<nuxt-link to="/">Contact</nuxt-link>
+						<nuxt-link to="/contact">Contact</nuxt-link>
 					</li>
 				</ul>
 				<div class="footer-content__contact">

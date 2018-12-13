@@ -28,7 +28,7 @@
             </div>
           </div>
           <div class="gallery-link">
-            <v-button text="see more" link="/"></v-button>
+            <v-button text="see more" link="/gallery"></v-button>
           </div>
         </div>
       </div>
