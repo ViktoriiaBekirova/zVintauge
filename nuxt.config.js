@@ -53,7 +53,7 @@ module.exports = {
     '~plugins/components.js',
     {src: '~plugins/swiper', ssr: false}
   ],
-   modules: [
+  modules: [
         [
             'nuxt-mq',
             {
@@ -65,6 +65,5 @@ module.exports = {
                 }
             }
         ]
-   ]
+  ]
 }
-

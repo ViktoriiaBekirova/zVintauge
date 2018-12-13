@@ -77,7 +77,7 @@
 
 <script>
 
-import axios from '~/api/axios'
+import axios from '~/static/api/axios'
 import mobileSlider from '~/components/ui/MobileSlider.vue'
 
 export default {
@@ -91,12 +91,11 @@ export default {
         mobileSlider
     },
     mounted () {
-        axios.get('https://api.myjson.com/bins/dw34k')
+        axios.get('/api/gallery.json')
             .then(response => {
                 this.gallery = response.data.slice(0,6)
-                // console.log(this.gallery)
             })
-        axios.get('https://api.myjson.com/bins/17xmb8')
+        axios.get('/api/blog.json')
             .then(response => {
                 this.blog = response.data.slice(0,3)
             })
