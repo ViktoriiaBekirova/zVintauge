@@ -1,0 +1,71 @@
+.blog-info {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: rem(50) 0;
+}
+.blog-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: rem(30);
+  margin-bottom: rem(50);
+  background: #f7f7f7;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: rem(40) 0;
+    &_time {
+      display: block;
+      @include MerriweatherReg;
+      @include font(17);
+      padding-bottom: rem(10);
+      color: #888;
+    }
+    &_title {
+      padding-bottom: rem(10);
+      color: #111;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    &_tags {
+      @include font(15);
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+  }
+  &__img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    &:after {
+      content: '';
+      padding-top: 55%;
+      float: left;
+    }
+    img {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+  &__content {
+    padding: rem(40) rem(100);
+    text-align: left;
+    @media (max-width: $smallTablet) {
+      padding: rem(30) 0;
+    }
+    &_text {
+      margin-bottom: rem(20);
+    }
+  }
+}

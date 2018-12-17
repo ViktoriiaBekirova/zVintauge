@@ -1,28 +1,49 @@
 [
   {
+    "time": "June 26, 2013  by admin",
     "header": "The title on the article1",
+    "header_blog": "RETRO GALLERY: FRAGMENTING PERSISTENT FLIGHT AND PATHOLOGY",
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia. Morbi rutrum vulputate est sed faucibus.consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia.",
     "link": "/",
+    "tags": "BUSINESS, LIFESTYLE",
     "img": {
       "src": "/img/slide1.jpg",
       "alt": "gallery"
     }
   },
   {
+    "time": "June 27, 2013  by admin",
     "header": "The title on the article2",
+    "header_blog": "RETRO GALLERY: FRAGMENTING PERSISTENT FLIGHT AND PATHOLOGY",
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia. Morbi rutrum vulputate est sed faucibus.consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia.",
     "link": "/",
+    "tags": "BUSINESS, LIFESTYLE",
     "img": {
       "src": "/img/slide2.jpg",
       "alt": "gallery"
     }
   },
   {
+    "time": "June 28, 2013  by admin",
     "header": "The title on the article3",
+    "header_blog": "RETRO GALLERY: FRAGMENTING PERSISTENT FLIGHT AND PATHOLOGY",
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia. Morbi rutrum vulputate est sed faucibus.consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia.",
     "link": "/",
+    "tags": "BUSINESS, LIFESTYLE",
     "img": {
       "src": "/img/slide3.jpg",
+      "alt": "gallery"
+    }
+  },
+  {
+    "time": "June 30, 2013  by admin",
+    "header": "The title on the article1",
+    "header_blog": "RETRO GALLERY: FRAGMENTING PERSISTENT FLIGHT AND PATHOLOGY",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia. Morbi rutrum vulputate est sed faucibus.consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia.",
+    "link": "/",
+    "tags": "BUSINESS, LIFESTYLE",
+    "img": {
+      "src": "/img/slide1.jpg",
       "alt": "gallery"
     }
   }

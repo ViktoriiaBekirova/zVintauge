@@ -67,7 +67,7 @@
           <div class="blog-content__text">
             <h3>{{item.header}}</h3>
             <p>{{item.text}}</p>
-            <v-button class="blog-content__text_button" text="read more" link="/"></v-button>
+            <v-button class="blog-content__text_button" text="read more" link="/blog"></v-button>
           </div>
         </div>
       </div>

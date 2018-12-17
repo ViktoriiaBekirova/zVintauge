@@ -15,19 +15,19 @@
                 </transition>
             </div>
             <ul class="menu" ref="menu">
-                <li>
+                <li @click="closeMenu">
                     <nuxt-link to="/">Home</nuxt-link>
                 </li>
-                <li>
+                <li @click="closeMenu">
                     <nuxt-link to="/gallery">Gallery</nuxt-link>
                 </li>
-                <li>
+                <li @click="closeMenu">
                     <nuxt-link to="/blog">Blog</nuxt-link>
                 </li>
-                <li>
+                <li @click="closeMenu">
                     <nuxt-link to="/about">About</nuxt-link>
                 </li>
-                <li>
+                <li @click="closeMenu">
                     <nuxt-link to="/contact">Contact</nuxt-link>
                 </li>
             </ul>

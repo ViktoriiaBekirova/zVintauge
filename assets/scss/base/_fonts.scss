@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Cabin|Crimson+Text|Dancing+Script|Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Cabin|Crimson+Text|Dancing+Script|Merriweather|Montserrat");
 
 //DancingScript
 @mixin DancingScriptReg {
@@ -50,5 +50,18 @@
 }
 @mixin MontserratBold {
   font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+//Merriweather
+@mixin MerriweatherReg {
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+}
+@mixin MerriweatherMedium {
+  font-family: 'Merriweather', serif;
+  font-weight: 600;
+}
+@mixin MerriweatherBold {
+  font-family: 'Merriweather', serif;
   font-weight: 900;
 }
