@@ -12,20 +12,24 @@
                 </div>
                 <div class="blog-page__content">
                     <p class="blog-page__content_text">{{item.text}}</p>
-                    <!--<v-button text="read more" link="/about" ></v-button>-->
-                    <div class="btn" @click="readMore">
+
+                    <div class="btn" @click="readMore(i)" v-show="showedReadmore !== i">
                         <span class="btn__text">read more</span>
                     </div>
-                    <div class="moreInfo">
-                        <div class="blog-page__content_quote"><p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet vultatup duista.</p></div>
-                        <h2 class="header-padding">{{item.header1}}</h2>
-                        <p class="text-padding">{{item.text1}}</p>
-                        <h2 class="header-padding">{{item.header2}}</h2>
-                        <p class="text-padding">{{item.text2}}</p>
-                        <h2 class="header-padding">{{item.header3}}</h2>
-                        <p class="text-padding">{{item.text3}}</p>
-                        <p>{{item.text_about}}</p>
-                    </div>
+
+                    <transition name="fade">
+                        <div class="show-more" v-show="showedReadmore === i">
+                            <div class="blog-page__content_quote"><p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet vultatup duista.</p></div>
+                            <h2>{{item.header1}}</h2>
+                            <p>{{item.text1}}</p>
+                            <h2>{{item.header2}}</h2>
+                            <p>{{item.text2}}</p>
+                            <h2>{{item.header3}}</h2>
+                            <p>{{item.text3}}</p>
+                            <p>{{item.text_about}}</p>
+                        </div>
+                    </transition>
+
                 </div>
             </div>
         </section>
@@ -39,6 +43,7 @@
         data () {
             return {
                 blog: null,
+                showedReadmore: -1
             }
         },
         mounted () {
@@ -51,9 +56,8 @@
                 })
         },
         methods: {
-            readMore() {
-                document.querySelector('.btn').classList.add('none')
-                document.querySelector('.moreInfo').classList.add('block')
+            readMore(index) {
+                this.showedReadmore = index
             }
         }
     }

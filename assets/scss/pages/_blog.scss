@@ -77,18 +77,19 @@
     }
   }
 }
-.header-padding {
-  padding-bottom: rem(10);
+.button {
+  width: 50px;
+  height: 20px;
+  background-color: green;
 }
-.text-padding {
-  padding-bottom: rem(20);
-}
-.moreInfo {
-  display: none;
-  &.block {
-    display: block;
+.show-more {
+  h2 {
+    padding-bottom: rem(10);
   }
-}
-.none {
-  display: none !important;
+  p {
+    padding-bottom: rem(20);
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
 }
