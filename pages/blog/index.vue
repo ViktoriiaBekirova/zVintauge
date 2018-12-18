@@ -12,7 +12,20 @@
                 </div>
                 <div class="blog-page__content">
                     <p class="blog-page__content_text">{{item.text}}</p>
-                    <v-button text="read more" link="/about"></v-button>
+                    <!--<v-button text="read more" link="/about" ></v-button>-->
+                    <div class="btn" @click="readMore">
+                        <span class="btn__text">read more</span>
+                    </div>
+                    <div class="moreInfo">
+                        <div class="blog-page__content_quote"><p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet vultatup duista.</p></div>
+                        <h2 class="header-padding">{{item.header1}}</h2>
+                        <p class="text-padding">{{item.text1}}</p>
+                        <h2 class="header-padding">{{item.header2}}</h2>
+                        <p class="text-padding">{{item.text2}}</p>
+                        <h2 class="header-padding">{{item.header3}}</h2>
+                        <p class="text-padding">{{item.text3}}</p>
+                        <p>{{item.text_about}}</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -25,7 +38,7 @@
     export default {
         data () {
             return {
-                blog: null
+                blog: null,
             }
         },
         mounted () {
@@ -36,6 +49,12 @@
                 .catch(e => {
                     console.log(e)
                 })
+        },
+        methods: {
+            readMore() {
+                document.querySelector('.btn').classList.add('none')
+                document.querySelector('.moreInfo').classList.add('block')
+            }
         }
     }
 </script>

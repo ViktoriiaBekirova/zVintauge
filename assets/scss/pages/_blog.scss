@@ -67,5 +67,28 @@
     &_text {
       margin-bottom: rem(20);
     }
+    &_quote {
+      border-left: 3px solid #1c7791;
+      @include font(18);
+      margin: 0 rem(50) rem(30) rem(50);
+      font-style: italic;
+      color: #666;
+      padding-left: rem(20);
+    }
   }
+}
+.header-padding {
+  padding-bottom: rem(10);
+}
+.text-padding {
+  padding-bottom: rem(20);
+}
+.moreInfo {
+  display: none;
+  &.block {
+    display: block;
+  }
+}
+.none {
+  display: none !important;
 }

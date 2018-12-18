@@ -48,9 +48,10 @@ module.exports = {
       })
     ]
   },
-  vendor: ['components'],
+  vendor: ['components', 'vee-validate'],
   plugins: [
     '~plugins/components.js',
+    {src: '~plugins/vee-validate', ssr: false},
     {src: '~plugins/swiper', ssr: false}
   ],
   modules: [

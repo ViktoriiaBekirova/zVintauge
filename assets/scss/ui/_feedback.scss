@@ -1,0 +1,51 @@
+.main-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.form-application {
+  margin-bottom: rem(16);
+  &__data {
+    padding: rem(24) rem(56) rem(40) rem(32);
+    background-color: $white;
+    box-shadow: 0 0 15px 0 rgba(88, 95, 105, 0.1);
+    @media (max-width: $bigPhone) {
+      padding: rem(24) rem(17) rem(40) rem(16);
+    }
+    .input-form {
+      margin-bottom: rem(24);
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__comment {
+    height: 100%;
+    padding: rem(24) rem(32) rem(40) rem(32);
+    background-color: $white;
+    box-shadow: 0 0 15px 0 rgba(88, 95, 105, 0.1);
+    @media (max-width: $smallTablet) {
+      padding: rem(24) rem(56) rem(40) rem(32);
+    }
+    @media (max-width: $bigPhone) {
+      padding: rem(24) rem(17) rem(24) rem(16);
+    }
+  }
+}
+.form-button {
+  padding: rem(20) 0;
+}
+
+.application-form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: rem(40) rem(10);
+  background: #f7f7f7;
+  h1 {
+    padding-bottom: rem(20);
+  }
+}
+
