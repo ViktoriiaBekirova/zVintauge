@@ -35,8 +35,8 @@ deploy_image:
       echo "$CI_REGISTRY_PASSWORD" | sudo docker login -u "$CI_REGISTRY_USER" $CI_REGISTRY --password-stdin
       echo "===>>> Deploy to production server <<<==="
       sudo docker stop vintauge || true
-      sudp docker rm -f vintauge || true
-      sudo docker run --name=vintauge --restart=always -d -p 3000:3000 $CI_REGISTRY_IMAGE
+      sudo docker rm -f vintauge || true
+      sudo docker run --rm --network="host" --name=vintauge --restart=always -d -p 3000:3000 $CI_REGISTRY_IMAGE
 
 
   only:
