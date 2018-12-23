@@ -1,7 +1,3 @@
-variables:
-  DOCKER_HOST: tcp://localhost:2375/
-  DOCKER_DRIVER: overlay2
-
 stages:
     - build
     - deploy
@@ -17,6 +13,9 @@ before_script:
 build_image:
   stage: build
   image: docker
+  variables:
+    DOCKER_HOST: tcp://localhost:2375/
+    DOCKER_DRIVER: overlay2
   script:
     - |
       echo "===>>> Build image <<<==="
