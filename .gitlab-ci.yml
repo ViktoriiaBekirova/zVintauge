@@ -36,7 +36,7 @@ deploy_image:
       echo "===>>> Deploy to production server <<<==="
       sudo docker stop zvintauge || true
       sudo docker rm -f zvintauge || true
-      sudo docker run --network="host" --name=zvintauge --restart=always -d $CI_REGISTRY_IMAGE
+      sudo docker run -p 3000:3000 --name=zvintauge --restart=always -d $CI_REGISTRY_IMAGE
 
 
   only:
