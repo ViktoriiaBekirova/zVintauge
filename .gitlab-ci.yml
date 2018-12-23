@@ -35,7 +35,8 @@ deploy_image:
       echo "$CI_REGISTRY_PASSWORD" | sudo docker login -u "$CI_REGISTRY_USER" $CI_REGISTRY --password-stdin
       echo "===>>> Deploy to production server <<<==="
       sudo docker stop zvintauge || true
-      sudo docker rm -f zvintauge || true
+      sudo docker rm $(docker ps -a -q) || true
+      sudo docker rmi -f $(docker images -q) || true
       sudo docker run -p 3000:3000 --name=zvintauge --restart=always -d $CI_REGISTRY_IMAGE
 
 
