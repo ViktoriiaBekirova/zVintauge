@@ -6,6 +6,7 @@ services:
   - docker:dind
 
 before_script:
+  - whoami
   - echo "$CI_REGISTRY_PASSWORD" | docker login -u "$CI_REGISTRY_USER" $CI_REGISTRY --password-stdin
 
 ###Build
@@ -31,7 +32,6 @@ deploy_image:
   stage: deploy
   script:
     - |
-      whoami
       echo "===>>> Deploy to production server <<<==="
       docker stop vintauge || true
       docker rm vintauge || true
