@@ -1,0 +1,44 @@
+variables:
+  DOCKER_HOST: tcp://localhost:2375/
+  DOCKER_DRIVER: overlay2
+
+stages:
+    - build
+    - deploy
+
+services:
+  - docker:dind
+
+before_script:
+  - echo "$CI_REGISTRY_PASSWORD" | docker login -u "$CI_REGISTRY_USER" $CI_REGISTRY --password-stdin
+
+###Build
+
+build_image:
+  stage: build
+  image: docker
+  script:
+    - |
+      echo "===>>> Build image <<<==="
+    - docker build --pull -t "$CI_REGISTRY_IMAGE" .
+    - docker push "$CI_REGISTRY_IMAGE"
+  only:
+    - master
+
+###DEPLOY
+
+deploy_image:
+  stage: deploy
+  script:
+    - |
+      whoami
+      echo "===>>> Deploy to production server <<<==="
+      docker stop vintauge || true
+      docker rm vintauge || true
+      docker run --name=vintauge --restart=always -d -p 3000:3000 $CI_REGISTRY_IMAGE
+
+
+  only:
+    - master
+  tags:
+    - web-servers
