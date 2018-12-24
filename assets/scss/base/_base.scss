@@ -23,9 +23,6 @@ p {
   @include font(16);
   @include CrimsonTextReg;
   line-height: 1.5;
-  &.subtitle {
-    @include CrimsonTextBold;
-  }
   @media (max-width: $bigPhone) {
     @include font(14);
   }

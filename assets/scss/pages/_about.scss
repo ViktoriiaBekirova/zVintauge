@@ -1,0 +1,41 @@
+.advantages {
+  position: relative;
+  padding: rem(40) rem(10);
+  &__header {
+    margin-bottom: rem(30);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    @include font(16);
+    @include CrimsonTextReg;
+    line-height: 1.5;
+    li {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: rem(8);
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &:before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        margin-top: rem(8);
+        margin-right: rem(8);
+        background-color: #556B2F;
+      }
+    }
+  }
+}
+.about-form {
+  position: relative;
+  padding: rem(40) rem(20);
+  margin-bottom: rem(40);
+  background: #f7f7f7;
+  h2 {
+    margin-bottom: rem(30);
+  }
+}
